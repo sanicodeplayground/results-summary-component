@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /*Colors*/
+  /*Primary*/
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /*Neutral*/
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsla(224, 30%, 27%, 0.9);
+
+  /*Gradients background*/
+  --light-slate-blue: hsla(252, 100%, 67%, 0.9);
+  --light-royal-blue: hsla(241, 81%, 54%, 1);
+
+  /*Gradient circle*/
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  /*Fonts*/
+  --h1-size: 3rem;
+  --h2-size: 2rem;
+  --h3-size: 1.3rem;
+  --paragraph-size: 1.12rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+section {
+  display: flex;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.card {
+  align-items: center;
+  justify-content: center;
+}
+
+.card-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  border-radius: 0 0 1rem 1rem;
+  color: var(--pale-blue);
+}
+
+.card-result h3 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: var(--h2-size);
+  padding: 1.2rem 0;
+  color: var(--light-lavender);
+}
+
+.circle {
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.cicrle-data {
+  padding: 1rem 0;
+}
+
+.cicrle-data h1 {
+  font-family: inherit;
+  font-size: var(--h1-size);
+  font-weight: 800;
+}
+.circle-data-p {
+  font-family: inherit;
+  font-size: var(--paragraph-size);
+  font-weight: 700;
+  color: var(--light-lavender);
+}
+
+.card-result h2 {
+  font-family: inherit;
+  font-size: var(--h2-size);
+  margin: 1rem 0;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.card-result-p {
+  font-family: inherit;
+  font-size: var(--paragraph-size);
+  font-weight: 500;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+  color: var(--light-lavender);
+}
+
+/*Card Summary */
+.card-summary {
+  font-family: inherit;
+  font-size: var(--paragraph-size);
+  padding: 1rem 2rem;
+}
+
+.card-summary h3 {
+  text-align: left;
+  font-size: var(--h3-size);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  line-height: 2;
+  padding: 0 1.2rem;
+  font-size: var(--paragraph-size);
+  font-family: inherit;
+}
+
+.summary-item-left {
+  display: flex;
+}
+
+.card-summary img {
+  width: 1.12rem;
+  height: 1.12rem;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.summary-digits {
+  font-weight: 900;
+}
+.card-summary span {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  border-radius: 0.5rem;
+}
+
+.reaction-title {
+  color: var(--light-red);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  border-radius: 0.5rem;
+}
+
+.memory-title {
+  color: var(--orangey-yellow);
+}
+
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  border-radius: 0.5rem;
+}
+
+.verbal-title {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  border-radius: 0.5rem;
+}
+
+.visual-title {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  margin-top: 1rem;
+  background-color: hsl(224, 30%, 27%);
+  color: var(--white);
+  font-family: inherit;
+  font-size: var(--paragraph-size);
+  border-radius: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--cobalt-blue);
+  border: none;
+}
+
+/*Attribution*/
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution a span {
+  background: linear-gradient(to right, #6df300 0%, #f52105 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*Large screens*/
+@media screen and (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  section {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    width: 36rem;
+  }
+
+  .card-result {
+    width: 50%;
+    border-radius: 1rem;
+  }
+
+  .card-summary {
+    width: 50%;
+    padding: 0 1rem;
+  }
+
+  .card-summary h3 {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    margin-top: 2rem;
+  }
+}
